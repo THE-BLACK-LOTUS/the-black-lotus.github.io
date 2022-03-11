@@ -1,0 +1,42 @@
+
+/*font-family: Indie_Flower*/
+@font-face{
+    font-family: Indie_Flower;
+    src:url('../Fonts/Indie_Flower/IndieFlower-Regular.ttf')
+}
+
+/*font-family: Dancing_Script*/
+@font-face{
+    font-family: Dancing_Script;
+    src:url('../Fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf')
+}
+
+/*font-family: Sansita_Swashed*/
+@font-face{
+    font-family: Sansita_Swashed;
+    src:url('../Fonts/Sansita_Swashed/SansitaSwashed-VariableFont_wght.ttf')
+}
+
+/*font-family: Shadows_Into_Light*/
+@font-face{
+    font-family: Shadows_Into_Light;
+    src:url('../Fonts/Shadows_Into_Light/ShadowsIntoLight-Regular.ttf')
+}
+
+/*font-family: Gloria_Hallelujah*/
+@font-face{
+    font-family: Gloria_Hallelujah;
+    src:url('../Fonts/Gloria_Hallelujah/GloriaHallelujah-Regular.ttf')
+}
+
+/*font-family: Caveat*/
+@font-face{
+    font-family: Caveat;
+    src:url('../Fonts/Caveat/Caveat-VariableFont_wght.ttf')
+}
+
+/*font-family: Covered_By_Your_Grace*/
+@font-face{
+    font-family: Covered_By_Your_Grace;
+    src:url('../Fonts/Covered_By_Your_Grace/CoveredByYourGrace-Regular.ttf')
+}

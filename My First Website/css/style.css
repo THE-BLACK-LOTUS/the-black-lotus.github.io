@@ -1,0 +1,297 @@
+
+@import url(../css/fonts.css);
+
+
+html,body{
+    margin:0%;
+    box-sizing:border-box;
+    overflow-x: hidden;
+}
+
+:root{
+
+    /*  gradient-color    */
+    --sun: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+
+
+    /*     Theme Font-family   */
+    --Caveat: 'Caveat',cursive;
+    --Ds: 'Dancing_Script',cursive;
+    --Gloria: 'Gloria_Hallelujah',cursive;
+    --Indie: 'Indie_Flower',cursive;
+    --Sansita: 'Sansita_Swashed',cursive;
+    --Shadows: 'Shadows_Into_Light',cursive;
+    --Grace: 'Covered_By_Your_Grace',cursive;
+
+}
+
+
+
+
+/*..............Global Classes..........*/
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+.flex-row{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style-type: none;
+}
+
+h1{
+    font-family: var(--Grace);
+    font-size: 7rem;
+}
+
+h4{
+    font-family: var(--Ds);
+    font-size: 2rem;
+}
+
+h3{
+    font-family:var(--Gloria);
+    font-size: 3rem;
+}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 2rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Shadows);
+    cursor: pointer;
+}
+
+/*span{
+    font-family: var(--Indie);
+}*/
+
+.container{
+    margin:0 5vw;
+}
+
+/*..............Global Classes..........*/
+
+/*.............navbar................*/ 
+
+.nav{
+    background:  #505050;
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+    transition: height 2s ease-in-out;
+}
+
+.nav .nav-menu{
+    justify-content: space-between;
+}
+
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons{
+    display:flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+    color: white;
+}
+
+.nav .toggle-collapse .toggle-icons i:hover{
+    color:gold;
+}
+
+.collapse{
+    height: 35rem;
+}
+
+.nav .nav-items{
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: var(--Shadows);
+    font-size: 1.1rem;
+}
+
+.nav .nav-items .nav-link:hover{
+    background-color: gold;
+}
+
+.nav .nav-items .nav-link:hover a{
+    color: white;
+}
+
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+    font-family: var(--Caveat);
+    font-size: 1.6rem;
+}
+
+.nav .nav-brand a:hover{
+    color: gold;
+}
+
+.nav .socials{
+    padding: 1.4rem 0;
+}
+
+.nav .socials i{
+    padding: 0 .2rem;
+}
+
+.nav .socials i:hover{
+    color: gold;
+}
+
+/*.............navbar................*/
+
+
+/*..............Main Content ..........*/
+
+/*...........Site title.............*/
+
+main .site-title{
+    background: url(../assets/bgcolorshelf.jpg);
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+}
+
+main .site-title .site-background{
+    padding-top: 10rem;
+    text-align: center;
+    color: white;
+}
+
+main .site-title .btn{
+    margin: 1.8rem;
+    background: rgba(253, 195, 4, 0.747);
+}
+
+main .site-title .btn:hover{
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+main .site-title h1,h3{
+    margin: .3rem;
+}
+
+/*...........Site title.............*/
+
+/*...........Blog Carousel..........*/
+
+main .blog{
+    background: url('../assets/geh.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+    width: 100%;
+}
+
+main .blog .blog-post{
+    padding-top: 7rem;
+}
+
+main .blog-post .blog-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    height: 20rem;
+    margin: 5rem 2rem;
+    box-shadow: 0 20px 20px rgba(185, 185, 185, 0.2);
+}
+
+main .blog-content .blog-title{
+    padding: 0rem 3rem;
+    color: white;
+}
+
+main .blog-content .btn-blog{
+    padding: 1rem 3rem;
+    background:  rgba(253, 195, 4, 0.747);
+    margin: .5rem;
+}
+
+main .blog-content .btn-blog:hover{
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+main .blog-content span{
+    display: block;
+}
+
+section .container .owl-nav{
+    position: absolute;
+    top: 0%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.owl-nav .owl-prev .owl-nav-prev,
+.owl-nav .owl-next .owl-nav-next{
+    color: white;
+    font-size: 2rem;
+    background: transparent;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover{
+    background: transparent;
+    color: gold;
+}
+
+/*...........Blog Carousel..........*/
+
+/*......Site Conetent........*/
+
+main .site-content{
+    display:grid;
+    grid-template-columns: 70% 30%;
+}
+
+/*......Site Conetent........*/
+
+/*...............Main Content...........*/
+
+
+/*      Viewport less than or equal to 750px        */
+
+@media only screen and (max-width:750px){
+    .nav .nav-menu ,.nav .nav-items{
+        flex-direction: column;
+    }
+
+    .nav .toggle-collapse{
+        display: initial;
+    }
+}
+
+/*      Viewport less than or equal to 750px        */
